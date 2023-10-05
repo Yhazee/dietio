@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-out;
+}
+
+:root{
+    --primary-color: #339798;
+    --secondary-color: #52BD8F;
+    --third-color: #FFD24C;    
+    --white-color: #fff;
+    --box-color: #F1FFE8;
+    --dot-primary-color: #9CE4AF;
+    --dot-secondary-color: #E2F9D2;
+    --forth-color: #D4F3D3;
+    --big-font-weight: 700;
+    --medium-font-weight: 600;
+    --small-font-weight: 500;
+    --tiny-font-weight: 400;
+    --tinys-font-weight: 300;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+    min-height: 926px;
+    max-height: 926px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    background-color: var(--white-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+}
+
+.headerhome{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadein 1s ease-in-out forwards;
+}
+
+.logohome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.logohome h1 {
+    color: var(--primary-color);
+    font-weight: var(--big-font-weight);
+    font-size: 2rem;
+    margin-top: 5.188rem;
+    height: 3rem;
+}
+
+.logo{
+    width: 3.438rem;
+    height: 3.438rem;
+    margin-top: 4.875rem;
+    margin-left: 12.938rem;
+}
+
+.calendar{
+    margin-top: 1.625rem;
+    width: 22.741rem;
+    height: 11.25rem;
+    border-radius: 0.593rem;
+    background-color: var(--secondary-color);
+}
+
+.calendar h4{
+    color: var(--white-color);
+    font-weight: var(--medium-font-weight);
+    font-size: 0.711rem;
+    margin-top: 0.644rem;
+}
+
+.calendar h2{
+    color: var(--white-color);
+    font-weight: var(--medium-font-weight);
+    font-size: 1.185rem;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.295rem;
+}
+
+.date p{
+    margin-top: 0.358rem;
+    color: var(--white-color);
+    font-weight: var(--tinys-font-weight);
+    font-size: 0.889rem;
+    width: 2.904rem;
+    height: 1.244rem;
+}
+
+.day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23.625rem;
+}
+
+.day p{
+    margin-top: 0.544rem;
+    font-size: 1.185rem;
+    color: var(--white-color);
+    font-weight: var(--small-font-weight);
+    width: 1.891rem;
+    height: 1.891rem;
+    margin: 0.656rem;
+}
+
+#past-day{
+    background-color: var(--third-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+#current-day{
+    background-color: var(--white-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+.totaldiet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.totaldiet h2{
+    margin-top: 0.402rem;
+    font-size: 0.829rem;
+    font-weight: var(--small-font-weight);
+    width: 12.25rem;
+    height: 1.444rem;
+    color: var(--secondary-color);
+    background-color: var(--box-color);
+    border-radius: 0.296rem;
+}
+
+.calories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.063rem;
+    justify-content: center;
+    width: 22.188rem;
+    height: 7.375rem;
+}
+
+.calories h4{
+    font-size: 1rem;
+    float: left;
+    font-weight: var(--small-font-weight);
+    height: 2.188rem;
+}
+
+.rectangle {
+    width: 22.188rem;
+    height: 3.188rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 0.313rem;
+    background: linear-gradient(to right, var(--third-color) 75%, var(--forth-color) 25%);
+}
+
+.rectangle h1{
+    color: #625C5C;
+    margin-right: 0.7rem;
+    font-size: 1rem;
+    font-weight: var(--small-font-weight);
+}
+
+.calories h3{
+    color: #625C5C;
+    font-size: 0.875rem;
+    font-weight: var(--small-font-weight);
+    margin-top: 0.688rem;
+}
+
+.catat{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.063rem;
+    justify-content: center;
+    width: 22.188rem;
+}
+
+.catat h3{
+    font-size: 1rem;
+    float: left;
+    font-weight: var(--small-font-weight);
+    height: 2.188rem;
+}
+
+.container-catat{
+    width: 22.188rem;
+    height: 13.759rem;
+}
+
+.box-catat{
+    margin-top: 1.133rem;
+    display: flex;
+    width: 22.188rem;
+    height: 3.742rem;
+    background-color: var(--secondary-color);
+    border-radius: 1.131rem;
+}
+
+.box-catat:hover{
+    opacity: 0.8;
+    color: var(--secondary-color);
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box img{
+    margin-left: 1.679rem;
+}
+
+.box h2{
+    margin-left: 1.875rem;
+    color: var(--white-color);
+    font-size: 1.206rem;
+    font-weight: var(--big-font-weight);
+}
+
+.footer{
+    position: sticky;
+    bottom: 0;
+    margin-top: 4.36rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 26.688rem;
+    height: 4.959rem;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 40px 40px 0px 0px;
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.menu-bar i{
+    height: 1.813rem;
+    width: 1.875rem; 
+}
+
+.menu{
+    color:#625C5C;
+}
+
+.menu:hover{
+    color: var(--secondary-color);
+}
+
+.menu h5{
+    font-size: 0.75rem;
+    font-weight: var(--tiny-font-weight);
+}
+
+.current-menu{
+    color: var(--secondary-color);
+}
+
+.current-menu h5{
+    font-size: 0.75rem;
+    font-weight: var(--tiny-font-weight);
+}
+
+.current-menu:hover{
+    opacity: 0.7;
+}

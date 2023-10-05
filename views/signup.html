@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <link rel="icon" href="../img/logo2.png" type="image/png">
+    
+    <title>DIETIO</title>
+</head>
+<body>
+    <div class="register">
+        <div class="headreg">
+            <img class="logo" src="../img/logo.png" alt="logo">
+            <img class="head-logo" src="../img/headlog.png" alt="header">
+            <h1>Sign Up</h1>
+            <!-- Form 1 -->
+            <form action="" class="registerform" id="form1">
+                <div class="name">
+                    <label for="name">Fullname</label>
+                    <br>
+                    <div class="input">
+                      <input type="text" id="name">
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+                <div class="email">
+                  <label for="email">Email</label>
+                  <br>
+                  <div class="input">
+                    <input type="email" id="email">
+                    <div class="underline"></div>
+                  </div>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <br>
+                    <div class="input">
+                      <input type="password" id="password">
+                      <div class="underline"></div>
+                    </div>
+                    <div class="toggle-password" onclick="togglePasswordVisibility()">
+                      <input type="checkbox" id="toggleCheckbox">
+                      <label for="toggleCheckbox"></label>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextForm(event)">Next</button>
+            </form>
+            <!-- Form 2 -->
+            <form action="" class="registerform" id="form2" style="display: none;">
+                <div class="bb">
+                    <label for="bb">Berat Badan saat ini (Kg)</label>
+                    <br>
+                    <div class="input">
+                      <input type="tel" id="bb">
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+                <div class="tb">
+                  <label for="tb">Target Berat Badan (Kg)</label>
+                  <br>
+                  <div class="input">
+                    <input type="tel" id="tb">
+                    <div class="underline"></div>
+                  </div>
+                </div>
+                <div class="waktu">
+                    <label for="waktu">Jumlah waktu penurunan berat badan</label>
+                    <br>
+                    <div class="input">
+                      <input type="tel" id="waktu">
+                      <div class="underline"></div>
+                    </div>
+                </div>
+                <button class="signup-btn" onclick="showModal(event)">Sign up</button>
+            </form>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <div class="checklist">
+                  <img class="circle-img" src="../img/circle.png" alt="circle">
+                  <img class="check-img" src="../img/checklist.png" alt="checklist">
+                </div>
+                <h2>Registration Success</h2>
+                <button type="button" class="ok-btn">OK</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/form.js"></script>
+</body>
+</html>

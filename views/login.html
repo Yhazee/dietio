@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="icon" href="../img/logo2.png" type="image/png">
+    
+    <title>DIETIO</title>
+</head>
+<body>
+    <div class="login">
+        <div class="headlogin">
+            <img class="logo" src="../img/logo.png" alt="logo">
+            <img class="head-logo" src="../img/headlog.png" alt="header">
+            <h1>Log In</h1>
+            <form action="#" class="loginform">
+                <div class="email">
+                  <label for="email">Email</label>
+                  <br>
+                  <div class="input">
+                    <input type="email" id="email">
+                    <div class="underline"></div>
+                  </div>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <br>
+                    <div class="input">
+                      <input type="password" id="password">
+                      <div class="underline"></div>
+                    </div>
+                    <div class="toggle-password" onclick="togglePasswordVisibility()">
+                      <input type="checkbox" id="toggleCheckbox">
+                      <label for="toggleCheckbox"></label>
+                    </div>
+                </div>
+            </form>
+            <a class="login-btn" href="./home.html">Log in</a>
+            <div class="or">
+                <div class="under1"></div>
+                <span>or</span>
+                <div class="under2"></div>
+            </div>
+            <a class="signup-btn" href="./signup.html">Sign up</a>
+        </div>
+    </div>
+    <script src="../js/form.js"></script>
+</body>
+</html>
